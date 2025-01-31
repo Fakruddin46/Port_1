@@ -1,34 +1,37 @@
-:root {
-    --primary-color: #0556a7;
-    --secondary-color: #3498db;
-}
-
+/* General Styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-.navbar {
-    background: var(--primary-color) !important;
-}
-
-.section-header {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
-}
-
-.card {
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .profile-photo {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 3px solid #3498db;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-header {
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
 }

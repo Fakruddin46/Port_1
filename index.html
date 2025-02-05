@@ -6,107 +6,104 @@
     <title>Shaik Fakruddin | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css"> <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">SHAIK FAKRUDDIN</a>
-            <div class="navbar-text">
-                <a href="https://www.linkedin.com/in/shaik-fakruddin-135689255/" target="_blank" rel="noopener noreferrer" class="text-white me-3">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Fakruddin46" target="_blank" rel="noopener noreferrer" class="text-white me-3">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:shaikfakruddin251@gmail.com" class="text-white">
-                    <i class="fas fa-envelope"></i>
-                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#internships">Internships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="https://www.linkedin.com/in/shaik-fakruddin-135689255/" target="_blank" class="text-white me-3">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" class="text-white me-3">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:shaikfakruddin251@gmail.com" class="text-white">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="py-5 bg-light text-center">
-        <div class="container">
-            <img src="images/Me.jpg" alt="Shaik Fakruddin" class="profile-photo">
-            <h1 class="display-4">Data Analyst</h1>
-            <p class="lead">B.Tech CSE-IoT Student | CGPA: 8.38 | Python & SQL Certified</p>
-            <a href="https://drive.google.com/file/d/1ymEcvWPhA2mVnk_hLsULy95mhqCx4fq4/view?usp=sharing" download class="btn btn-primary mt-3">Download Resume</a>
+    <!-- About Section -->
+    <section id="about" class="pt-5 mt-5">
+        <div class="container text-center py-5">
+            <img src="images/your-photo.jpg" alt="Profile" class="profile-img rounded-circle">
+            <h1 class="display-4 mt-4">IoT Developer & Data Analyst</h1>
+            <p class="lead">B.Tech CSE-IoT Student | CGPA: 8.44</p>
+            
+            <div class="about-content mt-5 mx-auto">
+                <h3 class="mb-4">About Me</h3>
+                <p>
+                    Passionate IoT and Data Science enthusiast with hands-on experience in developing smart systems 
+                    using Raspberry Pi and NodeMCU. Skilled in Python, Java, and data analysis tools, I bridge 
+                    the gap between hardware and software solutions. Currently enhancing my expertise through 
+                    internships and academic projects focused on industrial automation and IoT applications.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- Education & Skills -->
-    <section class="py-5">
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
         <div class="container">
-            <h3 class="section-header mb-4">Education & Skills</h3>
-            <div class="row">
-                <!-- Education -->
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5>📚 Education</h5>
-                            <ul class="list-unstyled">
-                                <li><strong>B.Tech CSE-IoT</strong> | RVR&JC (2021-Present) | <strong>CGPA: 8.38</strong></li>
-                                <li><strong>Intermediate</strong> | Sri Chaitanya Junior College (2019-2021) | <strong>93%</strong></li>
-                                <li><strong>SSC</strong> | Veda The School of Learning (2018-2019) | <strong>GPA: 10.0</strong></li>
-                            </ul>
-                        </div>
-                    </div>
+            <h2 class="section-title">Education</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5>B.Tech in Computer Science (IoT)</h5>
+                    <p class="text-muted">R.V.R & J.C College of Engineering | 2021-2025</p>
+                    <p>CGPA: 8.44</p>
+                    
+                    <h5 class="mt-4">Intermediate (MPC)</h5>
+                    <p class="text-muted">Sri Chaitanya Junior College | 2019-2021</p>
+                    <p>Percentage: 93%</p>
                 </div>
-                <!-- Skills -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card mb-3">
+                    <div class="card shadow">
                         <div class="card-body">
-                            <h5>🚀 Technical Skills</h5>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge bg-primary"><i class="fab fa-python"></i> Python</span>
-                                <span class="badge bg-primary"><i class="fab fa-java"></i> Java</span>
+                            <h5>Programming Languages</h5>
+                            <div class="skill-badges">
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">Java</span>
                                 <span class="badge bg-primary">C</span>
-                                <span class="badge bg-primary">DSA</span>
-                                <span class="badge bg-primary">OOPS</span>
-                                <span class="badge bg-primary"><i class="fas fa-database"></i> SQL</span>
-                                <span class="badge bg-primary">IoT</span>
-                                <span class="badge bg-primary">Data Analysis</span>
+                                <span class="badge bg-primary">SQL</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-     <!-- Experience & Projects -->
-     <section class="py-5 bg-light">
-        <div class="container">
-            <h3 class="section-header mb-4">Experience & Projects</h3>
-            <div class="row">
-                <!-- Internships -->
-                <div class="col-md-4">
-                    <div class="card mb-3">
+                <div class="col-md-6">
+                    <div class="card shadow">
                         <div class="card-body">
-                            <h5>💼 Internships</h5>
-                            <ul>
-                                <li>Moderator Intern @ RJ E-NEST</li>
-                                <li>Business Analyst @ Smart Bridge</li>
-                                <li>IoT Intern @ Skill Dzire</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projects -->
-                <div class="col-md-8">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5>🔧 Projects</h5>
-                            <div class="mb-3">
-                                <h6>Industrial Automation System</h6>
-                                <p>Raspberry Pi 3B | Real-time monitoring | User interface design</p>
-                            </div>
-                            <div>
-                                <h6>Smart Garbage Monitoring</h6>
-                                <p>NodeMCU ESP8266 | Telegram alerts | IoT integration</p>
+                            <h5>Technologies & Tools</h5>
+                            <div class="skill-badges">
+                                <span class="badge bg-success">Raspberry Pi</span>
+                                <span class="badge bg-success">NodeMCU</span>
+                                <span class="badge bg-success">IoT Protocols</span>
+                                <span class="badge bg-success">Qlik Analytics</span>
                             </div>
                         </div>
                     </div>
@@ -115,34 +112,78 @@
         </div>
     </section>
 
-    <!-- Certifications & Leadership -->
-    <section class="py-5">
+    <!-- Internships Section -->
+    <section id="internships" class="py-5 bg-light">
         <div class="container">
-            <h3 class="section-header mb-4">Achievements</h3>
-            <div class="row">
-                <!-- Certifications -->
+            <h2 class="section-title">Internships</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="internship-item">
+                        <h5>Business Analyst Intern</h5>
+                        <p class="text-muted">Smart Bridge | April 2024 - June 2024</p>
+                        <ul>
+                            <li>Analyzed nationwide road accident patterns using Qlik platform</li>
+                            <li>Created interactive dashboards for data visualization</li>
+                        </ul>
+                    </div>
+                    <div class="internship-item mt-4">
+                        <h5>IoT Development Intern</h5>
+                        <p class="text-muted">Skill Dzire | May 2024 - July 2024</p>
+                        <ul>
+                            <li>Developed sensor-based monitoring systems using NodeMCU</li>
+                            <li>Implemented IoT solutions for industrial automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card mb-3">
+                    <div class="card shadow h-100">
                         <div class="card-body">
-                            <h5>🏆 Certifications</h5>
+                            <h5>Smart Industrial Automation</h5>
                             <ul>
-                                <li>Python Basics (HackerRank)</li>
-                                <li>SQL Essentials (LinkedIn)</li>
+                                <li>Developed using Raspberry Pi 3B+</li>
+                                <li>Real-time temperature monitoring system</li>
+                                <li>Automated product counting mechanism</li>
+                                <li>Integrated surveillance module</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!-- Leadership -->
                 <div class="col-md-6">
-                    <div class="card mb-3">
+                    <div class="card shadow h-100">
                         <div class="card-body">
-                            <h5>👥 Leadership</h5>
+                            <h5>IoT Waste Management</h5>
                             <ul>
-                                <li>Organized Smart Idea Challenge 2024</li>
-                                <li>Code-X & SICO Club Member</li>
+                                <li>NodeMCU-based garbage monitoring</li>
+                                <li>Real-time fill level alerts via Telegram</li>
+                                <li>Optimized waste collection routes</li>
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <ul class="certification-list">
+                        <li>Python Programming - HackerRank</li>
+                        <li>SQL Essentials - LinkedIn Learning</li>
+                        <li>IoT Fundamentals - Cisco Networking Academy</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -151,14 +192,12 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p>📞 +91-9014388704 || 🌐 Guntur, India</p>
-            <p>Built with 🔮 using Deep Seek AI</p>
-            <p>&copy; Made by Shaik Fakruddin</p>
+            <p class="mb-0">📞 +91-9014388704 | 📍 Guntur, India</p>
+            <p class="mb-0">© 2024 Shaik Fakruddin. All rights reserved</p>
         </div>
     </footer>
 
-    <!-- External JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script> <!-- External JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

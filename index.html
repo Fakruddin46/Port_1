@@ -43,10 +43,12 @@
     <!-- About Section -->
     <section id="about" class="pt-5 mt-5">
         <div class="container text-center py-5">
-            <img src="Shaik.jpg" alt="Profile" class="profile-img rounded-circle">
-            <h1 class="display-4 mt-4">Software Engineer & Data Analyst</h1>
-            <p class="lead">B.Tech CSE-IoT Student | <strong>CGPA: 8.38</strong></p>
-            
+            <img src="Shaik.jpg" alt="Profile" class="profile-img">
+            <h1 class="display-4 mt-4">IoT Developer & Data Analyst</h1>
+            <p class="lead">B.Tech CSE-IoT Student | CGPA: 8.38</p>
+            <button id="downloadResume" class="btn btn-primary mt-3">
+                <i class="fas fa-download me-2"></i>Download Resume
+            </button>
             <div class="about-content mt-5 mx-auto">
                 <h3 class="mb-4">About Me</h3>
                 <p>
@@ -74,7 +76,7 @@
                     <p><strong>93%</strong></p>
 
                     <h5 class="mt-4">SSC</h5>
-                    <p class="text-muted">Veda The Schoola of Learning | 2018-2019</p>
+                    <p class="text-muted">Veda The School of Learning | 2018-2019</p>
                     <p><strong>GPA:10</strong></p>
                 </div>
             </div>
@@ -87,7 +89,7 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card shadow">
+                    <div class="card shadow h-100">
                         <div class="card-body">
                             <h5>Programming Languages</h5>
                             <div class="skill-badges">
@@ -100,7 +102,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card shadow">
+                    <div class="card shadow h-100">
                         <div class="card-body">
                             <h5>Technologies & Tools</h5>
                             <div class="skill-badges">
@@ -120,23 +122,33 @@
     <section id="internships" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Internships</h2>
-            <div class="card shadow">
-                <div class="card-body">
-                    <div class="internship-item">
-                        <h5>Business Analyst Intern</h5>
-                        <p class="text-muted">Smart Bridge | April 2024 - June 2024</p>
-                        <ul>
-                            <li>Analyzed nationwide road accident patterns using Qlik platform</li>
-                            <li>Created interactive dashboards for data visualization</li>
-                        </ul>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="internship-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                            class="card-img-top" alt="Analytics">
+                        <div class="card-body">
+                            <h5>Business Analyst Intern</h5>
+                            <p class="text-muted">Smart Bridge | April 2024 - June 2024</p>
+                            <ul>
+                                <li>Analyzed nationwide road accident patterns using Qlik platform</li>
+                                <li>Created interactive dashboards for data visualization</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="internship-item mt-4">
-                        <h5>IoT Development Intern</h5>
-                        <p class="text-muted">Skill Dzire | May 2024 - July 2024</p>
-                        <ul>
-                            <li>Developed sensor-based monitoring systems using NodeMCU</li>
-                            <li>Implemented IoT solutions for industrial automation</li>
-                        </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="internship-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+                            class="card-img-top" alt="IoT">
+                        <div class="card-body">
+                            <h5>IoT Development Intern</h5>
+                            <p class="text-muted">Skill Dzire | May 2024 - July 2024</p>
+                            <ul>
+                                <li>Developed sensor-based monitoring systems using NodeMCU</li>
+                                <li>Implemented IoT solutions for industrial automation</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,7 +161,7 @@
             <h2 class="section-title">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card shadow h-100">
+                    <div class="project-card card shadow h-100">
                         <div class="card-body">
                             <h5>Smart Industrial Automation</h5>
                             <ul>
@@ -159,10 +171,17 @@
                                 <li>Integrated surveillance module</li>
                             </ul>
                         </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Fakruddin46/industrial-automation" 
+                               class="btn btn-outline-primary" 
+                               target="_blank">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card shadow h-100">
+                    <div class="project-card card shadow h-100">
                         <div class="card-body">
                             <h5>IoT Waste Management</h5>
                             <ul>
@@ -170,6 +189,13 @@
                                 <li>Real-time fill level alerts via Telegram</li>
                                 <li>Optimized waste collection routes</li>
                             </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Fakruddin46/waste-management" 
+                               class="btn btn-outline-primary" 
+                               target="_blank">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -183,11 +209,30 @@
             <h2 class="section-title">Certifications</h2>
             <div class="card shadow">
                 <div class="card-body">
-                    <ul class="certification-list">
-                        <li>Python Essentials - LinkedIn Learning</li>
-                        <li>SQL Essentials - LinkedIn Learning</li>
-                        <li>Java Course - Mastering the Fundamentals - Scalar</li>
-                    </ul>
+                    <div class="certification-item">
+                        <span>Python Essentials - LinkedIn Learning</span>
+                        <a href="https://drive.google.com/certificate1" 
+                           target="_blank" 
+                           class="btn btn-sm btn-outline-success">
+                            View Certificate
+                        </a>
+                    </div>
+                    <div class="certification-item">
+                        <span>SQL Essentials - LinkedIn Learning</span>
+                        <a href="https://drive.google.com/certificate2" 
+                           target="_blank" 
+                           class="btn btn-sm btn-outline-success">
+                            View Certificate
+                        </a>
+                    </div>
+                    <div class="certification-item">
+                        <span>Java Course - Mastering the Fundamentals - Scalar</span>
+                        <a href="https://drive.google.com/certificate3" 
+                           target="_blank" 
+                           class="btn btn-sm btn-outline-success">
+                            View Certificate
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
